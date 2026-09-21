@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio Profesional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        /* Transición suave al cambiar de modo */
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+        }
+        .project-card, .timeline-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project-card:hover, .timeline-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-body text-body">
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">MiPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link text-body" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link text-body" href="#trayectoria">Trayectoria</a></li>
+                    <li class="nav-item"><a class="nav-link text-body" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-body" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-body" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button id="themeToggle" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+                            <i id="themeIcon" class="bi bi-sun-fill me-2"></i><span id="themeText">Modo Claro</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center bg-body-secondary border-bottom">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">¡Hola! Soy Ejecutiva Back Office</h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 600px;">
+                Especializada en procesos complejos de control documental, trazabilidad y validación bajo norma técnica.
+            </p>
+            <div class="mt-4">
+                <a href="#contacto" class="btn btn-primary btn-lg px-4 me-2">Contáctame</a>
+                <a href="#proyectos" class="btn btn-outline-secondary btn-lg px-4">Ver Proyectos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="container py-5 border-bottom">
+        <div class="row align-items-center py-4">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="fw-bold mb-3">Sobre Mí</h2>
+                <p>¡Hola! Me llamo Margarita y soy administrativa back office.</p>
+                <p>Me gusta mejorar en mi trabajo y dar lo máximo de mis conocimientos y experiencia.</p>
+                <p>Soy eficiente en SAP, CRM, especializada en procesos complejos. Detallista y apta para trabajar bajo presión.</p>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="foto_portfolio.jpg" alt="Margarita Valencia" class="rounded-circle img-fluid object-fit-cover shadow" style="width: 200px; height: 200px; border: 4px solid var(--bs-primary);">
+            </div>
+        </div>
+    </section>
+
+    <section id="trayectoria" class="container py-5 border-bottom">
+        <div class="row g-5">
+            
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-4 text-primary"><i class="bi bi-briefcase-fill me-2"></i>Experiencia Laboral</h3>
+                
+                <div class="card timeline-card bg-body-secondary border-0 mb-3">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold mb-0">Ejecutiva de Proyectos BackOffice</h5>
+                            <span class="badge bg-primary">Última experiencia laboral</span>
+                        </div>
+                        <p class="text-secondary small mb-2"><i class="bi bi-buildings me-1"></i> Pampa Austral | Nov 2025 - Feb 2026</p>
+                        <p class="card-text fs-6">Gestión autónoma de un promedio de 50 proyectos diarios, garantizando el flujo operativo.
+                            Control de trazabilidad y auditoría documental en el portal de CGE bajo normativa técnica vigente.
+                            Monitoreo de solicitudes de conexión y ampliación de servicios mediante SAP y CRM.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card timeline-card bg-body-secondary border-0 mb-3">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold mb-0">Ejecutiva BackOffice CGE</h5>
+                            <span class="badge bg-secondary">3 años</span>
+                        </div>
+                        <p class="text-secondary small mb-2"><i class="bi bi-buildings me-1"></i> Kallplat Chile Limitada | Mayo 2022 - Mayo 2025</p>
+                        <p class="card-text fs-6">Resolución de solicitudes omnicanal (Oficina Virtual, Oficina Comercial, RR.SS. y Call Center) para CGE.
+                            Validación de documentación técnica para empresas de telecomunicaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-4 text-primary"><i class="bi bi-mortarboard-fill me-2"></i>Educación y Certificaciones</h3>
+                
+                <div class="card timeline-card bg-body-secondary border-0 mb-3">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Técnico Superior en Control Industrial</h5>
+                        <p class="text-secondary small mb-2"><i class="bi bi-geo-alt me-1"></i> Centro de Formación Técnica Simón Bolívar | 2005 </p>
+                        <p class="card-text fs-6">Formación técnica focalizada en la gestión dentro de entornos productivos automatizados.</p>
+                    </div>
+                </div>
+
+                <div class="card timeline-card bg-body-secondary border-0 mb-3">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Excel avanzado</h5>
+                        <p class="text-secondary small mb-2"><i class="bi bi-award me-1"></i> Udemy | Certificado digital en 2024</p>
+                        <p class="card-text fs-6">Dominio en el análisis de datos masivos y automatización de tareas repetitivas</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS ACTUALIZADA CON LOS 3 PROYECTOS -->
+    <section id="proyectos" class="container py-5 border-bottom">
+        <h2 class="fw-bold text-center mb-5">Proyectos Destacados</h2>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Proyecto 1: Billetera Digital -->
+            <div class="col-md-4">
+                <div class="card h-100 project-card bg-body-secondary border-0">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-primary mb-3" style="font-size: 2rem;"><i class="bi bi-wallet2"></i></div>
+                        <h4 class="card-title fw-bold">Billetera Digital</h4>
+                        <p class="card-text text-secondary flex-grow-1">Una billetera interactiva con login simulado, depósitos inmediatos, agendas de transferencia validadas y filtros avanzados de historial en Local Storage.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-secondary me-1">HTML5</span>
+                            <span class="badge bg-secondary me-1">Bootstrap</span>
+                            <span class="badge bg-secondary">jQuery</span>
+                        </div>
+                        <a href="https://github.com/mvaleliza-max" target="_blank" class="btn btn-sm btn-link text-primary p-0 text-decoration-none fw-bold">Ver Repositorio &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Sistema de Gestión de Tickets BackOffice -->
+            <div class="col-md-4">
+                <div class="card h-100 project-card bg-body-secondary border-0">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-primary mb-3" style="font-size: 2rem;"><i class="bi bi-headset"></i></div>
+                        <h4 class="card-title fw-bold">Comercio electrónico con autenticación</h4>
+                        <p class="card-text text-secondary flex-grow-1">Plataforma comercial con control de stock, registro de usuarios y carrito de compras.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-secondary me-1">React</span>
+                            <span class="badge bg-secondary me-1">Sequelize</span>
+                            <span class="badge bg-secondary me-1">Express</span>
+                        </div>
+                        <a href="https://github.com/mvaleliza-max/comercio_online" target="_blank" class="btn btn-sm btn-link text-primary p-0 text-decoration-none fw-bold">Ver Repositorio &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Integración de Formulario de Contacto-->
+            <div class="col-md-4">
+                <div class="card h-100 project-card bg-body-secondary border-0">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-primary mb-3" style="font-size: 2rem;"><i class="bi bi-send-check"></i></div>
+                        <h4 class="card-title fw-bold">Portal académico</h4>
+                        <p class="card-text text-secondary flex-grow-1">Plataforma educativa con módulos de inscripción de estudiantes, profesores y gestión de cursos</p>
+                        <div class="mb-3">
+                            <span class="badge bg-secondary me-1">Vite</span>
+                            <span class="badge bg-secondary me-1">React</span>
+                            <span class="badge bg-secondary me-1">lock.json</span>
+                        </div>
+                        <a href="https://github.com/mvaleliza-max/eduhub-fullstack" target="_blank" class="btn btn-sm btn-link text-primary p-0 text-decoration-none fw-bold">Ver Repositorio &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="habilidades" class="container py-5 border-bottom">
+        <h2 class="fw-bold text-center mb-5">Habilidades Técnicas</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+            <div class="col">
+                <div class="p-3 bg-body-secondary rounded border">
+                    <i class="bi bi-filetype-html text-orange fs-2"></i>
+                    <h5 class="mt-2 fw-bold mb-0">HTML5</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-body-secondary rounded border">
+                    <i class="bi bi-bootstrap-fill text-purple fs-2" style="color: #7952b3;"></i>
+                    <h5 class="mt-2 fw-bold mb-0">Bootstrap</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-body-secondary rounded border">
+                    <i class="bi bi-filetype-js fs-2 text-warning"></i>
+                    <h5 class="mt-2 fw-bold mb-0">JavaScript</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-body-secondary rounded border">
+                    <i class="bi bi-git fs-2 text-danger"></i>
+                    <h5 class="mt-2 fw-bold mb-0">Git Control</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container py-5 text-center">
+        <div class="py-4 mx-auto" style="max-width: 500px;">
+            <h2 class="fw-bold mb-3">Conectemos</h2>
+            <p class="text-secondary mb-4">¿Tienes una propuesta laboral o un proyecto en mente? Contáctame a través de mis redes o envíame un mensaje.</p>
+            
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="https://www.linkedin.com/in/margarita-valencia-lizama-234a31381" target="_blank" class="btn btn-primary px-4 py-2">
+                    <i class="bi bi-linkedin me-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/mvaleliza-max" target="_blank" class="btn btn-outline-secondary px-4 py-2">
+                    <i class="bi bi-github me-2"></i> GitHub
+                </a>
+            </div>
+
+            <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST" id="contactForm" class="text-start">
+                <div class="mb-3">
+                    <input type="email" name="_replyto" class="form-control" id="contactEmail" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="mensaje" class="form-control" id="contactMessage" rows="3" placeholder="Tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary w-100">Enviar mensaje</button>
+            </form>
+            <div id="contactAlert" class="mt-3"></div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center bg-body-tertiary border-top text-secondary fs-7">
+        <div class="container">
+            &copy; 2026 Margarita Valencia. Hecho con Bootstrap y JavaScript.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
